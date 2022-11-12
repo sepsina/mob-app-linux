@@ -1,0 +1,28 @@
+#main-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    gap: 10px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 10px;
+}
+#sensor-card {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: stretch;
+    gap: 10px;
+}
+#f-val {
+    flex: 1 1 100%;
+    text-align: right;
+    font-size: 150%;
+    padding-right: 10px;
+}
+#item-name {
+    border-bottom: 1px solid orange;
+    padding: 3px;
+}
+

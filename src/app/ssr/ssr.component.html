@@ -1,0 +1,32 @@
+<div id="main-frame">
+    <div id="item-name">
+        {{getName()}}
+    </div>
+    <div id="button-card">
+        <button mat-stroked-button
+                id="off-button"
+                (click)="setActuatorOff()">
+            off
+        </button>
+        <button *ngIf="hasLevel == false"
+                mat-stroked-button
+                id="toggle-button"
+                (click)="toggleActuator()">
+            <mat-icon>shuffle</mat-icon>
+            toggle
+        </button>
+        <mat-slider *ngIf="hasLevel == true"
+                    min="5"
+                    max="100"
+                    step="5"
+                    thumbLabel
+                    [(ngModel)]="sliderVal">
+        </mat-slider>
+        <button mat-stroked-button
+                id="on-button"
+                (click)="setActuatorOn()">
+            on
+        </button>
+    </div>
+</div>
+
